@@ -1,0 +1,20 @@
+{
+  "name": "wt-docs",
+  "version": "1.0.0",
+  "description": "华通前端文档",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs --open",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "author": "xkloveme",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^0.12.2"
+  },
+  "dependencies": {
+    "vuepress-theme-antdocs": "^1.2.2"
+  }
+}
