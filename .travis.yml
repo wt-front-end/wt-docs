@@ -3,10 +3,11 @@ node_js:
   - '10'
 
 install:
-  - npm install
+  - npm install -g yarn
+  - yarn
 
 script:
-  - npm run docs:build
+  - yarn docs:build
 
 after_success:
   - cd ./docs/.vitepress/dist
