@@ -12,20 +12,20 @@ title: 起步
 
 ## Css 规范
 
-[详情链接](/css/)
+[详情链接](/wt-docs/css/)
 
 ## Js 规范
 
-[详情链接](/js/)
+[详情链接](/wt-docs/js/)
 
 ## Vue 规范
 
-[详情链接](/vue/)
+[详情链接](/wt-docs/vue/)
 
 ## 组件规范
 
-[详情链接](/element/)
+[详情链接](/wt-docs/element/)
 
 ## 大屏规范
 
-[详情链接](/dataV/)
+[详情链接](/wt-docs/dataV/)
