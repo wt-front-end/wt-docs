@@ -18,8 +18,10 @@ module.exports = {
           { text: 'CSS规范', link: '/css/' },
           { text: 'JS规范', link: '/js/' },
           { text: 'Vue规范', link: '/vue/' },
-          { text: '组件规范', link: '/element/' },
+          { text: '内部规范', link: '/element/' },
           { text: '大屏规范', link: '/dataV/' },
-      ]
+      ],
+      repo: 'https://github.com/xkloveme/wt-docs',
+      repoLabel: 'GitHub'
   }
 }
