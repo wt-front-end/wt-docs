@@ -1,5 +1,6 @@
 ---
 title: 起步
+sidebar: false
 ---
 
 # 起步
@@ -8,24 +9,18 @@ title: 起步
 前端上有越来越多的规范,为了规范大家的代码和保证代码的质量,最重要的是为了让别人看得懂,特写此文档.
 :::
 
-> 分为以下模块
+## [Css 规范](/wt-docs/css/)
 
-## Css 规范
+## [Js 规范](/wt-docs/js/)
 
-[详情链接](/wt-docs/css/)
+## [Vue 规范](/wt-docs/vue/)
 
-## Js 规范
+## [组件规范](/wt-docs/element/)
 
-[详情链接](/wt-docs/js/)
+## [大屏规范](/wt-docs/dataV/)
 
-## Vue 规范
+## [Git 规范](/wt-docs/git/)
 
-[详情链接](/wt-docs/vue/)
+## [打包规范](/wt-docs/bale/)
 
-## 组件规范
-
-[详情链接](/wt-docs/element/)
-
-## 大屏规范
-
-[详情链接](/wt-docs/dataV/)
+## [前端环境](/wt-docs/front-end/)

@@ -98,17 +98,7 @@ title: 大屏 开发指南
 <punishTable :flag="flag" @openDetail="$emit('openDetail', $event)" />
 ```
 
-#### 分支命名规范
 
-> 修复`bug`需要在`pre`新建分支`fixed-名字缩写-月份-日期`
-
-> 开发新功能需要在自己分支上操作一般为自己名称缩写
-
-> 提交代码规范,任何人不允许提交到`master`分支
-
-> 需要提交到`pre`然后合并到`master`分支
-
-> `pre`环境发布不做限制,`master`发布须在`pre`验证通过才能发布
 
 #### 字体 Echarts 写法
 
