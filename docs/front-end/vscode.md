@@ -63,33 +63,35 @@ VS Code 毫无疑问是目前最强大的编辑器，没有之一，凭借自身
 
 ```json
 {
-  "explorer.confirmDelete": false,
-  "emmet.triggerExpansionOnTab": true,
-  "editor.tabSize": 4,
-  "window.zoomLevel": -1,
-  "stylelint.autoFixOnSave": true,
-  "standard.autoFixOnSave": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
+  // 编译器
+  "editor.fontFamily": "'Cascadia Code','FuraMono Nerd Font', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.renderControlCharacters": true,
+  "editor.fontSize": 14,
+  "editor.minimap.maxColumn": 80,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
+  // 自动保存files
+  "files.autoSave": "onFocusChange",
+  "files.trimFinalNewlines": true,
   "files.associations": {
     "*.wpy": "vue",
-    "*.html": "html"
+    "*.html": "html",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
   },
-  "editor.renderControlCharacters": true,
-  "emmet.syntaxProfiles": {
-    "vue-html": "html",
-    "vue": "html"
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true
   },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "wxml": "html"
-  },
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "search.followSymlinks": false,
   "files.exclude": {
     // 是否显示这些文件(夹)
     "**/.git": true,
@@ -102,24 +104,97 @@ VS Code 毫无疑问是目前最强大的编辑器，没有之一，凭借自身
     "**/bower_components": true
     // "**/dist": true
   },
-  "search.exclude": {
-    // 搜索的时候排除的文件夹，视情况开启
-    // "**/node_modules": false,
+  //  让函数(名)和后面的括号之间加个空格 js
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // 控制台
+  "terminal.integrated.fontFamily": "FuraMono Nerd Font",
+  "terminal.integrated.fontSize": 18,
+  // 代码格式化
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatterOptions": {
+    "js": "vscode-typescript", // prettier-eslint || vscode-typescript
+    "js-beautify-html": {
+      "wrap_line_length": 300,
+      "wrap_attributes": "auto",
+      "end_with_newline": false
+    },
+    "prettyhtml": {
+      "printWidth": 300,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": true
+    },
+    // --- 解决问题 ---
+    "prettier": {
+      "semi": false,
+      "singleQuote": true
+    }
+    // --- 解决问题 ---
   },
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/node_modules/**": true,
-    "**/tmp/**": true,
-    "**/bower_components/**": true,
-    "**/dist/**": true
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.visible": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.settings.editor": "json",
+  // emmet
+  "emmet.includeLanguages": {
+    "wxml": "html",
+    "javascript": "javascriptreact"
   },
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  // 刷题
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "/Users/lorialex/.leetcode",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.hint.commandShortcut": false,
+  "window.newWindowDimensions": "fullscreen",
+  // console 打印配置
+  "turboConsoleLog.quote": "'",
+  "turboConsoleLog.logMessagePrefix": "🐛",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "utools"
+  ],
+  "workbench.colorTheme": "escook dark soft",
+  "git.confirmSync": false,
+  "cSpell.enableFiletypes": [
+    "python"
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "extensions.ignoreRecommendations": true,
+  "tabnine.experimentalAutoImports": true,
+  "i18n-ally.displayLanguage": "zh-CN",
+  "explorer.confirmDelete": false,
+  "stylelint.autoFixOnSave": true,
+  "standard.autoFixOnSave": true,
+  "search.followSymlinks": false,
   "explorer.confirmDragAndDrop": false,
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "vscode-icons",
-  "vsicons.dontShowNewVersionMessage": true,
-  "workbench.settings.editor": "json"
 }
 ```
 
