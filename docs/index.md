@@ -13,3 +13,4 @@ features:
     details: 先进技术最新研究.
 footer: MIT Licensed | Copyright © 2021-present WT
 ---
+![](http://bing.getlove.cn/bingImage)
