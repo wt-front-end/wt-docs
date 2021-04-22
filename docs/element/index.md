@@ -44,7 +44,7 @@ export const getManageGetUserApi = params => axios.get(api.user, { params })
 export const getManageGetUserApi = params => axios.get('/system/user/list', { params })
 
 // post 请求
-export const postManageServiceApi = data => axios.get('/service', data)
+export const postManageServiceApi = data => axios.post('/service', data)
 
 // 切换请求方法
 export const postManageServiceApi = data => axios[data.id === 0 ? 'post' : 'put']('/service', data)
