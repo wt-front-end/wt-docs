@@ -31,6 +31,7 @@ sidebar: false
 ### - [介绍如何配置使用Vim](/wt-docs/front-end/vim.md)
 ### - [使用TypeScript中的一些高级知识点](/wt-docs/front-end/ts.md)
 ### - [介绍一些实用小工具](/wt-docs/front-end/utils.md)
+### - [浙里办避坑指南](/wt-docs/front-end/zlb.md)
 
 
 ::: tip 注：
