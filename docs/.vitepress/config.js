@@ -4,6 +4,12 @@ module.exports = {
   description: '前端基础指南',
   head: [['link', { rel: 'icon', href: '/images/favicon.ico' }]],
   theme: 'antdocs',
+  markdown: {
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(require('markdown-it-task-lists'))
+    }
+  },
   // 主题配置
   themeConfig: {
     //   头部导航

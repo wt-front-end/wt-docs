@@ -33,7 +33,7 @@ sidebar: false
 ### - [介绍一些实用小工具](/wt-docs/front-end/utils.md)
 ### - [浙里办避坑指南](/wt-docs/front-end/zlb.md)
 
-
+### - [临安二期防逃web前端开发指南](/wt-docs/front-end/la-ft.md)
 ::: tip 注：
 这不是一篇大而全的文档，不会介绍以上工具的所有用法，只会介绍我们日常开发中使用比较多的用法贵精不贵多，如果你需要更加全面的学习，你应该去查阅它们的官方文档。
 :::
