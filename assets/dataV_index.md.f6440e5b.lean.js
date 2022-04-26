@@ -1,0 +1,1 @@
+import{o as n,c as s,b as a}from"./app.d5b2ad57.js";const t='{"title":"大屏 开发指南","description":"","frontmatter":{"title":"大屏 开发指南"},"relativePath":"dataV/index.md","lastUpdated":1650941644740}',p={},o=a('',14);p.render=function(a,t,p,e,c,u){return n(),s("div",null,[o])};export default p;export{t as __pageData};
