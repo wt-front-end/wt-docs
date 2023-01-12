@@ -1,0 +1,1 @@
+import{o as n,c as s,b as a}from"./app.c212677f.js";const t='{"title":"浙里办开发指南","description":"","frontmatter":{"title":"浙里办开发指南"},"headers":[{"level":2,"title":"mgop.js","slug":"mgop-js"}],"relativePath":"front-end/zlb.md","lastUpdated":1673505727134}',p={},o=a('',8);p.render=function(a,t,p,e,c,u){return n(),s("div",null,[o])};export default p;export{t as __pageData};
