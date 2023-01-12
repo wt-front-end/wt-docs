@@ -76,8 +76,6 @@ watone serach
 ### watone ip 获取本机ip
 
 ``` bash
-watone i
-# OR
 watone ip
 使用方法：
       watone ip
