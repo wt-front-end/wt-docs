@@ -194,3 +194,15 @@ watone install
 使用方法：
       watone i [npm的启动命令]
 ```
+
+## 问题汇总
+
+1.问: 当我安装之后,`watone -v`提示我
+`watone : 无法加载文件 C:\Users\lenovo\AppData\Roaming\npm\watone.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。`
+
+解决办法:
+- 1.以管理员身份运行power shell
+（备注：右键win标，选择 “Windows PowerShell(管理员)”打开即可）
+- 2.输入 `set-ExecutionPolicy RemoteSigned` 回车
+- 3.输入 `A` 或者 `Y` 回车
+成功后重新尝试`watone -v`就可以了
