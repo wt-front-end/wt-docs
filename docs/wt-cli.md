@@ -95,7 +95,7 @@ watone open
 ### watone t 翻译服务
 > 此命令需要连接到互联网
 ``` bash
-# 会在当前目录启动一个watonetp服务,并在浏览器打开
+# 需要翻译的单词或关键词
 watone t
 # OR
 watone translation
@@ -136,19 +136,6 @@ watone http
      -u, --url    启动目录,默认当前目录
 ```
 
-## v 命令说明
-
-> 当在所在项目时,v命令会去寻找dev命令执行
- 启动项目
-``` bash
-v
-# OR
-watone v
-# OR
-watone dev
-使用方法：
-      watone v [npm的启动命令]
-```
 
 ## v 命令说明
 
