@@ -15,6 +15,7 @@ module.exports = {
     //   头部导航
     nav: [
       { text: '首页', link: '/' },
+      { text: 'WATONE 命令行', link: '/wt-cli' },
       {
         text: '目录', link: '/start/',
         items: [
