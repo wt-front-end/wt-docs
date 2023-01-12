@@ -105,7 +105,7 @@ watone translation
       watone t 你好
 ```
 
-### watone w 天气服务
+### watone a 天气服务
 > 此命令需要连接到互联网
 ``` bash
 # 会查询当前地区天气服务
