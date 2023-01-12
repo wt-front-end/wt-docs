@@ -1,0 +1,1 @@
+import{o as e,c as r,b as t}from"./app.c212677f.js";const a='{"title":"前端链接","description":"","frontmatter":{"title":"前端链接"},"headers":[{"level":2,"title":"文档地址","slug":"文档地址"}],"relativePath":"link/index.md","lastUpdated":1673504315245}',o={},n=t('',3);o.render=function(t,a,o,l,i,s){return e(),r("div",null,[n])};export default o;export{a as __pageData};
