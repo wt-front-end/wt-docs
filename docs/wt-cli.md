@@ -111,7 +111,7 @@ watone translation
 # 会查询当前地区天气服务
 watone a
 # OR
-watone warther
+watone weather
 使用方法：
       watone a [地区]
 例如：(查询郑州的天气)
