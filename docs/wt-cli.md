@@ -4,11 +4,11 @@ title: WATONE 命令行
 # WATONE 命令行工具
 
 ## 前言
-![](https://www.helloimg.com/images/2023/01/12/oGW7sm.png)
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAW6ncHgQNRh5GZf/root/content)
 
-> 为了快速帮助开发命令行工具，本文的教程将用于学习各种命令行工具的使用。
-> 请按照本教程使用，会极大提升工作效率。
-> 该工具是集成了各种好用的小工具
+> - 为了快速帮助开发命令行工具，本文的教程将用于学习各种命令行工具的使用。
+> - 请按照本教程使用，会极大提升工作效率。
+> - 该工具是集成了下载模版,npm 换源 ,IP查询等各种好用的小工具
 
 ## 安装并使用
 ```bash
@@ -18,11 +18,17 @@ yarn install @watone/wt-cli --global
 # OR
 pnpm install @watone/wt-cli --global
 ```
+
+## 更新命令行工具
+```bash
+npm update @watone/wt-cli --global
+
+```
 ## 命令预览
 ```bash
 watone -h
 ```
-![](https://www.helloimg.com/images/2023/01/12/oGWkF1.png)
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAYaiIBL-1lj_MfA/root/content)
 
 ## 命令说明
 
@@ -55,6 +61,19 @@ watone -h
 # OR
 watone --help
 ```
+
+### watone init 快速脚手架
+
+> 此命令会让你快速生成一个项目,目前内置四个模版
+
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAhrM4_4dkC15a4j/root/content)
+
+``` bash
+watone init
+```
+
+- 选择后,输入内容会在当前文件夹下生成对应模版
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAlD4YMLr62FUyQH/root/content)
 
 ### watone s 关键字搜索
 
@@ -115,6 +134,36 @@ watone weather
 例如：(查询郑州的天气)
       watone a zhengzhou
 ```
+
+### watone npm 换源服务
+
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAvnYTkbIphrCPJR/root/content)
+
+``` bash
+watone npm
+```
+> - #### 1. 选择哪个命令要换源
+> - #### 2. 选择要换的是哪个源(推荐使用xkloveme对应淘宝源)
+
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAyOv7HD5ldOg3fL/root/content)
+
+``` bash
+# 列出现在的源情况
+watone npm ls
+```
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhA3jzWXrSy2AqK8g/root/content)
+
+### watone app 华通云看板
+
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAc4A8QkiUWxxi4n/root/content)
+
+> 此命令会启动一个应用,展示项目发布信息
+``` bash
+watone app
+```
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAoQ_jhscvIWbEmF/root/content)
+
+
 
 ## http 命令说明
 
