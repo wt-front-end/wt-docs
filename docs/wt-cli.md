@@ -160,10 +160,26 @@ watone npm ls
 > 此命令会启动一个应用,展示项目发布信息
 ``` bash
 watone app
+# or
+watone apps
 ```
+
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhBhct2OswnPbB7HO/root/content)
+
+#### 进入project应用 项目看板
+
+``` bash
+watone app project
+```
+
 ![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAoQ_jhscvIWbEmF/root/content)
 
 
+#### 进入AI应用 chatgpt
+``` bash
+watone app chatgpt
+```
+![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhBkljD1cHwaC1Zqc/root/content)
 
 ## http 命令说明
 
