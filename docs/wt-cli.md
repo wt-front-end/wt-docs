@@ -153,7 +153,7 @@ watone npm ls
 ```
 ![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhA3jzWXrSy2AqK8g/root/content)
 
-### watone app 华通云看板
+### watone app 应用中心
 
 ![](https://api.onedrive.com/v1.0/shares/s!Apf952DEby7RhAc4A8QkiUWxxi4n/root/content)
 
