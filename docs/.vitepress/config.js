@@ -10,6 +10,7 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/images/favicon.ico' }]],
   theme: 'antdocs',
   markdown: {
+    linkify: false,
     config: (md) => {
       md.use(taskLists, {
         disabled: true,

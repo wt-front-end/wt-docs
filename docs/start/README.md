@@ -67,5 +67,5 @@ unpkg.com/:package@:version/:file
 ```
 
 ::: tips
-如果是通过 npm 安装，并希望配合 webpack 使用，请阅读下一节：[快速上手](start.html)。
+如果是通过 npm 安装，并希望配合 webpack 。
 :::

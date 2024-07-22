@@ -68,7 +68,7 @@ git config --global user.email "jixk@watone.com.cn"
 
 ### 创建一个新仓库
 
-```bsah
+``` bash
 git clone git@47.111.5.200:jixk/wt-web-template.git
 cd wt-web-template
 touch README.md
@@ -79,7 +79,7 @@ git push -u origin master
 
 ### 推送现有文件夹
 
-```bsah
+```bash
 cd existing_folder
 git init
 git remote add origin git@47.111.5.200:jixk/wt-web-template.git
