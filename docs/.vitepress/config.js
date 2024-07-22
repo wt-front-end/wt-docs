@@ -1,4 +1,9 @@
-module.exports = {
+import { defineConfig } from 'vitepress'
+// .vitepress/config.mts
+import taskLists from 'markdown-it-task-checkbox'
+
+
+export default defineConfig({
   base: '/wt-docs/', //  部署时的路径 默认 /  可以使用二级地址 /base/
   title: '华通云前端文档',
   description: '前端基础指南',
@@ -6,18 +11,32 @@ module.exports = {
   theme: 'antdocs',
   markdown: {
     config: (md) => {
-      // use more markdown-it plugins!
-      md.use(require('markdown-it-task-lists'))
+      md.use(taskLists, {
+        disabled: true,
+        divWrap: false,
+        divClass: 'checkbox',
+        idPrefix: 'cbx_',
+        ulClass: 'task-list',
+        liClass: 'task-list-item',
+      })
     }
   },
-  // 主题配置
   themeConfig: {
+    logo: '/logo.svg',
+    search: {
+      provider: 'local'
+    },
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present xkloveme'
+    },
     //   头部导航
     nav: [
       { text: '首页', link: '/' },
+      { text: '华通云开发工具', link: '/wt-edge' },
       { text: 'WATONE 命令行', link: '/wt-cli' },
       {
-        text: '目录', link: '/start/',
+        text: '目录',
         items: [
           { text: '主页', link: '/start/' },
           { text: 'Css 规范', link: '/css/' },
@@ -32,7 +51,7 @@ module.exports = {
       },
       { text: '前端开发', link: '/front-end/' },
       {
-        text: '其他', link: '/link/',
+        text: '其他',
         items: [
           { text: '链接', link: '/link/' },
           { text: '资源', link: '/resource/' },
@@ -61,4 +80,4 @@ module.exports = {
     repo: 'https://github.com/xkloveme/wt-docs',
     repoLabel: 'GitHub'
   }
-}
+})

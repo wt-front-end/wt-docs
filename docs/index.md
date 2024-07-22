@@ -1,16 +1,24 @@
 ---
-home: true
-heroText: 华通云前端文档
-tagline: 前端一站式规范
-actionText: 开始
-actionLink: /start/
+layout: home
+
+hero:
+  name: 华通云前端文档
+  text: 前端一站式规范.
+  image:
+    src: /logo.svg
+    alt: LOGO
+  actions:
+    - theme: brand
+      text: 开始
+      link: /start/
 features:
-  - title: 规范
+  - icon: 🛠️
+    title: 规范
     details: 华通云前端统一规范.
-  - title: 封装
+  - icon: 📦
+    title: 封装
     details: 华通云前端组件使用.
-  - title: 先进
+  - icon: 🚀
+    title: 先进
     details: 先进技术最新研究.
-footer: MIT Licensed | Copyright © 2021-present WT
 ---
-![](http://bing.getlove.cn/bingImage)

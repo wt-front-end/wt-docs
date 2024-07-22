@@ -9,18 +9,18 @@ sidebar: false
 前端上有越来越多的规范,为了规范大家的代码和保证代码的质量,最重要的是为了让别人看得懂,特写此文档.
 :::
 
-## [Css 规范](/wt-docs/css/)
+## [Css 规范](/css/)
 
-## [Js 规范](/wt-docs/js/)
+## [Js 规范](/js/)
 
-## [Vue 规范](/wt-docs/vue/)
+## [Vue 规范](/vue/)
 
-## [组件规范](/wt-docs/element/)
+## [组件规范](/element/)
 
-## [大屏规范](/wt-docs/dataV/)
+## [大屏规范](/dataV/)
 
-## [Git 规范](/wt-docs/git/)
+## [Git 规范](/git/)
 
-## [打包规范](/wt-docs/bale/)
+## [打包规范](/bale/)
 
-## [前端环境](/wt-docs/front-end/)
+## [前端环境](/front-end/)
