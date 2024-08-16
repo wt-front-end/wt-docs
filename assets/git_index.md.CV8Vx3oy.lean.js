@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a4 as t}from"./chunks/framework.CDcGvvSU.js";const c=JSON.parse('{"title":"Git 提交规范","description":"","frontmatter":{},"headers":[],"relativePath":"git/index.md","filePath":"git/index.md"}'),h={name:"git/index.md"},n=t("",35),l=[n];function e(p,k,F,d,r,g){return a(),i("div",null,l)}const C=s(h,[["render",e]]);export{c as __pageData,C as default};
