@@ -11,6 +11,9 @@ hero:
     - theme: brand
       text: 开始
       link: /start
+    - theme: alt
+      text: jxk 函数
+      link: https://www.jixiaokang.com/jxk
 features:
   - icon: 🛠️
     title: 规范
