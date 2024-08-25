@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.PMq4igV_.js";const y=JSON.parse('{"title":"前端开发","description":"","frontmatter":{},"headers":[],"relativePath":"front-end/fe.md","filePath":"front-end/fe.md"}'),h={name:"front-end/fe.md"},t=n("",33),l=[t];function k(p,e,r,d,E,g){return a(),i("div",null,l)}const c=s(h,[["render",k]]);export{y as __pageData,c as default};
