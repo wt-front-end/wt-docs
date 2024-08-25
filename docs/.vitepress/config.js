@@ -10,7 +10,10 @@ export default defineConfig({
   sitemap: {
     hostname: 'http://wt.jixiaokang.com/'
   },
-  head: [['link', { rel: 'icon', href: '/images/favicon.ico' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/images/favicon.ico' }],
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-nIAubvqIiJ' }]
+  ],
   theme: 'antdocs',
   markdown: {
     linkify: false,
@@ -81,7 +84,7 @@ export default defineConfig({
     //     { text: '内部规范', link: '/element/' },
     //     { text: '大屏规范', link: '/dataV/' },
     // ],
-    repo: 'https://github.com/xkloveme/wt-docs',
+    repo: 'https://github.com/wt-front-end/wt-docs',
     repoLabel: 'GitHub'
   }
 })
