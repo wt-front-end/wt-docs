@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a6 as n}from"./chunks/framework.BiSjIwvC.js";const c=JSON.parse('{"title":"公司内网部署","description":"","frontmatter":{},"headers":[],"relativePath":"bale/index.md","filePath":"bale/index.md"}'),l={name:"bale/index.md"},h=n("",41),p=[h];function k(t,e,E,r,d,g){return a(),i("div",null,p)}const F=s(l,[["render",k]]);export{c as __pageData,F as default};
