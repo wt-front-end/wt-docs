@@ -5,14 +5,15 @@ import taskLists from 'markdown-it-task-checkbox'
 
 export default defineConfig({
   base: '/', //  部署时的路径 默认 /  可以使用二级地址 /base/
-  title: '华通云前端文档',
+  title: '华通云',
   description: '前端基础指南',
   sitemap: {
     hostname: 'http://wt.jixiaokang.com/'
   },
   head: [
     ['link', { rel: 'icon', href: '/images/favicon.ico' }],
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-nIAubvqIiJ' }]
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-nIAubvqIiJ' }],
+    ['meta', { name: 'keywords', content: '华通云,前端,文档,指南,规范,华通云前端,华通云科技有限公司,华通云前端规范' }]
   ],
   theme: 'antdocs',
   markdown: {
