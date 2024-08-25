@@ -51,7 +51,6 @@ features:
   </a>
 </h1>
 
-**中文** | [English](./README.en.md)
 
 ## 目录
 
@@ -383,7 +382,6 @@ yarn install @watone/console --save
 [author-url]: https://github.com/xkloveme
 
 [mit-img]: https://img.shields.io/npm/l/vue-cli-plugin-git-version.svg?style=flat&colorA=000000&colorB=000000
-[mit-url]: ./LICENSE
 
 [npm-img]: https://img.shields.io/npm/v/vue-cli-plugin-git-version?style=flat&colorA=000000&colorB=000000
 [npm-url]: https://www.npmjs.com/package/vue-cli-plugin-git-version
