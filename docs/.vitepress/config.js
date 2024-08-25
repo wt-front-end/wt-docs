@@ -7,6 +7,9 @@ export default defineConfig({
   base: '/wt-docs/', //  部署时的路径 默认 /  可以使用二级地址 /base/
   title: '华通云前端文档',
   description: '前端基础指南',
+  sitemap: {
+    hostname: 'https://wt-front-end.github.io/wt-docs/'
+  },
   head: [['link', { rel: 'icon', href: '/images/favicon.ico' }]],
   theme: 'antdocs',
   markdown: {
