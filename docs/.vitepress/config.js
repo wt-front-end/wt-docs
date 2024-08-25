@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 // .vitepress/config.mts
 import taskLists from 'markdown-it-task-checkbox'
 
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 export default defineConfig({
   base: '/', //  部署时的路径 默认 /  可以使用二级地址 /base/
@@ -27,6 +28,7 @@ export default defineConfig({
         ulClass: 'task-list',
         liClass: 'task-list-item',
       })
+      md.use(tabsMarkdownPlugin)
     }
   },
   themeConfig: {

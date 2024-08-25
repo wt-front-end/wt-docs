@@ -3,3 +3,4 @@ docs/.vitepress/dist
 docs/.DS_Store
 .gitignore
 .DS_Store
+docs/.vitepress/cache
