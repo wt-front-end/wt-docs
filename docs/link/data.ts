@@ -10,6 +10,27 @@ export const NAV_DATA= [
         link: 'https://caniuse.com',
       },
       {
+        title: '小康黑科技在线',
+        desc: '在线调试工具',
+        link: 'https://www.jixiaokang.com/black-tool/#/qrcode',
+      },
+      {
+        title: 'codepen',
+        desc: '在线编辑器',
+        link: ' https://codepen.io/trending',
+      },
+      {
+        title: '码上掘金',
+        desc: '在线编辑器',
+        link: 'https://code.juejin.cn/',
+      },
+      {
+        title: 'codesandbox',
+        desc: '在线编辑器类似 vscode',
+        link: 'https://codesandbox.io/p/devbox/hc32jp',
+      },
+      
+      {
         icon: 'https://tinypng.com/images/apple-touch-icon.png',
         title: 'TinyPNG',
         desc: '在线图片压缩工具',
@@ -33,6 +54,24 @@ export const NAV_DATA= [
         desc: 'JSON 在线解析及格式化验证',
         link: 'https://www.json.cn',
       },
+      {
+        title: '坐标转换',
+        desc: '支持批量地址转经纬度转换',
+        link: 'https://www.piliang.tech/geocoding-amap',
+      },
+      {
+        title: '一个工具箱',
+        desc: '466 个在线工具',
+        link: 'http://www.atoolbox.net/',
+      },
+      {
+        title: '共享您的屏幕',
+        desc: 'Screen Share Party',
+        link: 'https://ba.net/screen-share-party',
+      },
+      
+      
+      
     ],
   },
   {
@@ -73,6 +112,12 @@ export const NAV_DATA= [
         desc: '阮一峰的网络日志 每周五更新',
         link: 'http://www.ruanyifeng.com/blog/',
       },
+      {
+        title: '张鑫旭博客',
+        desc: '专注web前端偏前领域',
+        link: 'https://www.zhangxinxu.com/wordpress/',
+      },
+      
       {
         title: 'hellogithub',
         desc: 'github 最有价值的开源资源',
@@ -121,7 +166,7 @@ export const NAV_DATA= [
         title: '稀土掘金',
         icon: 'https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/apple-touch-icon.png',
         desc: '面向全球中文开发者的技术内容分享与交流平台',
-        link: 'https://juejin.cn',
+        link: 'https://juejin.cn/',
       },
       {
         title: 'V2EX',
@@ -137,16 +182,8 @@ export const NAV_DATA= [
       },
       {
         title: '博客园',
-        // icon: 'https://common.cnblogs.com/favicon.ico',
-        icon: '/icons/cnblogs.svg',
         desc: '博客园是一个面向开发者的知识分享社区',
         link: 'https://www.cnblogs.com',
-      },
-      {
-        title: '知乎',
-        icon: 'https://static.zhihu.com/heifetz/assets/apple-touch-icon-60.362a8eac.png',
-        desc: '中文互联网高质量的问答社区和创作者聚集的原创内容平台',
-        link: 'https://juejin.cn',
       },
     ],
   },
@@ -243,6 +280,11 @@ export const NAV_DATA= [
     title: 'CSS 相关',
     items: [
       {
+        title: 'css_tricks',
+        desc: '总结一些常用的 CSS 样式',
+        link: 'https://qishaoxuan.github.io/css_tricks/',
+      },
+      {
         icon: 'https://postcss.org/assets/logo-3e39b0aa.svg',
         title: 'PostCSS',
         desc: '一个用 JavaScript 转换 CSS 的工具',
@@ -258,7 +300,7 @@ export const NAV_DATA= [
         icon: 'https://www.tailwindcss.cn/apple-touch-icon.png',
         title: 'TailwindCSS 中文网',
         desc: '一个功能类优先的 CSS 框架',
-        link: 'https://www.tailwindcss.cn',
+        link: 'https://www.tailwindcss.cn/docs/installation',
       },
     ],
   },
@@ -431,12 +473,16 @@ export const NAV_DATA= [
         link: 'https://www.chartjs.org',
       },
       {
-        icon: 'https://threejs.org/files/favicon.ico',
-        // icon: 'https://threejs.org/files/favicon_white.ico',
         title: 'Three.js',
         desc: 'JavaScript 3d 库',
         link: 'https://threejs.org',
       },
+      {
+        title: '高德',
+        desc: 'Loca 数据可视化 API',
+        link: 'https://lbs.amap.com/api/loca-v2/intro',
+      },
+      
     ],
   },
   {
@@ -527,41 +573,39 @@ export const NAV_DATA= [
     title: '摸鱼专用',
     items: [
       {
-        icon: 'https://momoyu.cc/icon-192.png',
         title: '摸摸鱼热榜',
-        // desc: '聚合每日热门、搞笑、有趣、适合摸鱼的资讯',
         link: 'https://momoyu.cc',
       },
       {
-        icon: 'https://v.qq.com/favicon.ico',
-        title: '腾讯视频',
-        // desc: '中国领先的在线视频媒体平台，海量高清视频在线观看',
-        link: 'https://v.qq.com',
+        title: '555 影视',
+        link: 'https://5tmovies.com/',
       },
       {
-        icon: 'https://static.hdslb.com/mobile/img/512.png',
         title: '哔哩哔哩',
-        // desc: '',
         link: 'https://www.bilibili.com',
       },
       {
-        icon: 'https://www.youtube.com/s/desktop/014dbbed/img/favicon_48x48.png',
         title: 'YouTube',
-        // desc: '',
         link: 'https://www.youtube.com',
       },
       {
-        icon: '/icons/twitter.svg',
         title: 'Twitter',
-        // desc: '',
         link: 'https://twitter.com',
       },
       {
-        icon: '/icons/pixiv.png',
-        title: 'Pixiv',
-        // desc: '',
-        link: 'https://www.pixiv.net',
+        title: 'vidhub',
+        link: 'https://vidhub.icu/',
       },
+      {
+        title: '厂长资源',
+        link: 'https://czzy.top/',
+      },
+      {
+        title: '低端影视',
+        link: 'https://ddys.info/',
+      },
+      
+      
     ],
   },
 ]
