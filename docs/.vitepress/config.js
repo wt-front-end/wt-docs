@@ -57,6 +57,7 @@ export default defineConfig({
           { text: '大屏规范', link: '/dataV/' },
           { text: 'Git规范', link: '/git/' },
           { text: '打包规范', link: '/bale/' },
+          { text: '常用 docker', link: '/docker/' },
           { text: '前端环境', link: '/front-end/' },
         ]
       },

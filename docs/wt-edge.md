@@ -9,6 +9,10 @@ title: 华通云开发工具
 [微软商店](https://microsoftedge.microsoft.com/addons/detail/%E5%8D%8E%E9%80%9A%E4%BA%91%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/afmbapanbkfkkpknjdepbafobedckoeg)
 
 
+
+[google 浏览器安装](https://www.crxsoso.com/addon/detail/afmbapanbkfkkpknjdepbafobedckoeg)
+
+
 ![image.png](https://api.apifox.com/api/v1/projects/4863056/resources/454849/image-preview)
 
 

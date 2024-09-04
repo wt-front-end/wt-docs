@@ -12,8 +12,20 @@ hero:
       text: 开始
       link: /start
     - theme: alt
+      text: 前端资源导航
+      link: /link
+    - theme: alt
+      text: 华通云开发工具
+      link: /wt-edge
+    - theme: alt
       text: jxk 函数
       link: https://www.jixiaokang.com/jxk
+    - theme: alt
+      text: 免费图床
+      link: https://img.jixiaokang.com
+    - theme: alt
+      text: 常用 docker
+      link: /docker
 features:
   - icon: 🛠️
     title: 规范
