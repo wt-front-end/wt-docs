@@ -18,6 +18,55 @@ docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/xk-node:18
 docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/xk-node:20
 ```
 
+## 使用私有docker
+
+> 添加私有镜像源
+
+``` bash
+  "insecure-registries" : [
+    "docker.jixiaokang.com",
+    "docker.frp.jixiaokang.com"
+  ]
+```
+> 拉取公司内网镜像
+``` bash
+docker pull docker.jixiaokang.com/mini-router/nginx:latest
+```
+> 拉取互联网镜像
+``` bash
+docker pull docker.frp.jixiaokang.com/mini-router/nginx:latest
+```
+> 配置简易的 `docker-compose.yml` 示例
+
+``` yml
+version: "3.8"
+networks:
+  docker_net:
+    external: true
+services:
+  service_web:
+    image: docker.frp.jixiaokang.com/mini-router/nginx:latest
+    container_name: nginx-web
+    restart: always
+    # 构建配置
+    build:
+      context: .  # 构建上下文
+      dockerfile: dockerfile  # 指定 Dockerfile 文件
+    volumes:
+            - /data/nginx:/etc/nginx
+    networks:
+      - docker_net
+    ports:
+      - 63333:3000
+```
+
+## 运行容器
+```bash
+docker-compose up -d
+# or 强制运行指定文件的 yml
+docker-compose -f docker-compose.yml up -d
+```
+
 前端 docker 配置 `dockerfile`
 
 > `nginx:stable-alpine` 镜像可替换为 `registry.cn-hangzhou.aliyuncs.com/watone_docker/nginx:stable-alpine`
