@@ -30,11 +30,11 @@ docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/xk-node:20
 ```
 > 拉取公司内网镜像
 ``` bash
-docker pull docker.jixiaokang.com/mini-router/nginx:latest
+docker pull docker.jixiaokang.com/nginx:latest
 ```
 > 拉取互联网镜像
 ``` bash
-docker pull docker.frp.jixiaokang.com/mini-router/nginx:latest
+docker pull docker.frp.jixiaokang.com/nginx:latest
 ```
 > 配置简易的 `docker-compose.yml` 示例
 
@@ -45,10 +45,10 @@ networks:
     external: true
 services:
   service_web:
-    image: docker.frp.jixiaokang.com/mini-router/nginx:latest
+    image: docker.frp.jixiaokang.com/nginx:latest
     container_name: nginx-web
     restart: always
-    # 构建配置
+    # 构建配置(可选)
     build:
       context: .  # 构建上下文
       dockerfile: dockerfile  # 指定 Dockerfile 文件
@@ -67,7 +67,7 @@ docker-compose up -d
 docker-compose -f docker-compose.yml up -d
 ```
 
-前端 docker 配置 `dockerfile`
+## 前端 docker 配置 `dockerfile`
 
 > `nginx:stable-alpine` 镜像可替换为 `registry.cn-hangzhou.aliyuncs.com/watone_docker/nginx:stable-alpine`
 
