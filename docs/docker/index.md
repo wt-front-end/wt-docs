@@ -1,9 +1,8 @@
 # 国内常用 docker
 
-
 ## nginx 国内镜像
 
-``` bash
+```bash
 # 从Registry中拉取镜像
 docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/nginx:stable-alpine
 docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/nginx:latest
@@ -11,7 +10,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/nginx:latest
 
 ## node 国内镜像
 
-``` bash
+```bash
 # 从Registry中拉取镜像
 docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/xk-node:16
 docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/xk-node:18
@@ -20,25 +19,61 @@ docker pull registry.cn-hangzhou.aliyuncs.com/watone_docker/xk-node:20
 
 ## 使用私有docker
 
-> 添加私有镜像源
+| 加速地址                          | 说明                     |
+|----------------------------------|--------------------------|
+| [https://docker.m.daocloud.io](https://docker.m.daocloud.io)    | DaoCloud 驱动            |
+| [https://dockerpull.com](https://dockerpull.com)           | Docker Proxy 驱动        |
+| [https://atomhub.openatom.cn](https://atomhub.openatom.cn)      | AtomHub 提供，仅有基础镜像 |
+| [https://docker.1panel.live](https://docker.1panel.live)       | 1panel 驱动              |
+| [https://hub.rat.dev](https://hub.rat.dev)             | 耗子面板驱动            |
+| [https://docker.registry.cyou](https://docker.registry.cyou)     | bestcfipas 驱动         |
+| [https://dockerhub.icu](https://dockerhub.icu)               | DockerHub 驱动          |
+| [https://docker.chenby.cn](https://docker.chenby.cn)         | Chenby 驱动             |
+| [https://dhub.kubesre.xyz](https://dhub.kubesre.xyz)         | KubeSRE 驱动           |
 
-``` bash
-  "insecure-registries" : [
+> 添加私有镜像源 `vim /etc/docker/daemon.json`
+
+```bash
+{
+    "insecure-registries" : [
     "docker.jixiaokang.com",
     "docker.frp.jixiaokang.com"
-  ]
+  ],
+   "registry-mirrors" : [
+    "https://docker.m.daocloud.io",
+    "https://dockerpull.com",
+    "https://atomhub.openatom.cn",
+    "https://docker.1panel.live",
+    "https://hub.rat.dev",
+    "https://docker.registry.cyou",
+    "https://dockerhub.icu",
+    "https://docker.chenby.cn",
+    "https://dhub.kubesre.xyz"
+  ],
+}
 ```
-> 拉取公司内网镜像
+
 ``` bash
+# 在里面填上代理域名 重启即可
+systemctl daemon-reload
+systemctl restart docker
+```
+
+> 拉取公司内网镜像
+
+```bash
 docker pull docker.jixiaokang.com/nginx:latest
 ```
+
 > 拉取互联网镜像
-``` bash
+
+```bash
 docker pull docker.frp.jixiaokang.com/nginx:latest
 ```
+
 > 配置简易的 `docker-compose.yml` 示例
 
-``` yml
+```yml
 version: "3.8"
 networks:
   docker_net:
@@ -61,6 +96,7 @@ services:
 ```
 
 ## 运行容器
+
 ```bash
 docker-compose up -d
 # or 强制运行指定文件的 yml
@@ -71,7 +107,7 @@ docker-compose -f docker-compose.yml up -d
 
 > `nginx:stable-alpine` 镜像可替换为 `registry.cn-hangzhou.aliyuncs.com/watone_docker/nginx:stable-alpine`
 
-``` dockerfile
+```dockerfile
 # Version 1.0
 FROM nginx:stable-alpine
 #LABEL 维护者信息
@@ -90,13 +126,13 @@ ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 ## `.dockerignore`
 
-``` bash
+```bash
 /node_modules
 ```
 
 ## `nginx.conf`
 
-``` bash
+```bash
 user  nginx;
 worker_processes  auto;
 
@@ -142,7 +178,7 @@ text/javascript text/css application/xml;
 
 ## `default.conf`
 
-``` bash
+```bash
 server {
     listen       3000;
     server_name  localhost;

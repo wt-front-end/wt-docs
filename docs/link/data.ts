@@ -227,6 +227,11 @@ export const NAV_DATA= [
         link: 'https://vueuse.org',
       },
       {
+        title: 'uilibhub',
+        desc: '探索最佳 UI 库',
+        link: 'https://uilibhub.com/zh/p/2',
+      },
+      {
         icon: 'https://element-plus.org/images/element-plus-logo-small.svg',
         title: 'Element Plus',
         desc: '基于 Vue 3，面向设计师和开发者的组件库',
