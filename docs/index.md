@@ -276,7 +276,7 @@ export default defineConfig({
 ```
 == vue-cli-plugin-git-version
 
-# vue-cli-plugin-git-version
+## vue-cli-plugin-git-version
 
 [![version][npm-img]][npm-url]
 [![size][size-img]][size-url]
@@ -356,7 +356,7 @@ console.log('构建时间:', versionInfo.time);
 ```
 
 == @watone/v-x
-# v-x 脱敏自定义指令
+## v-x 脱敏自定义指令
 
 <p align="center">
   脱敏自定义指令
@@ -431,7 +431,7 @@ new Vue({
 - `'switchFalse'`: 显示密文
 
 == @watone/console
-<h1 align="center">watone console</h1>
+<h1 align="center">@watone/console</h1>
 
 <p align="center">
   @watone/console 是一个为移动浏览器设计的控制台工具。它提供了类似于浏览器控制台的功能,可以在移动设备上方便地查看日志、错误等信息。
