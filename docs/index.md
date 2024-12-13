@@ -26,6 +26,9 @@ hero:
     - theme: alt
       text: 常用 docker
       link: /docker
+    - theme: alt
+      text: 小康黑科技
+      link: https://tool.jixiaokang.com/#/qrcode
 features:
   - icon: 🛠️
     title: 规范
@@ -37,7 +40,6 @@ features:
     title: 先进
     details: 先进技术最新研究.
 ---
-
 
 
 :::tabs

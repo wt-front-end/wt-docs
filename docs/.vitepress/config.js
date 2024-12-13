@@ -42,7 +42,6 @@ export default defineConfig({
       copyright: 'Copyright © 2019-present xkloveme'
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/wt-front-end/wt-docs' }],
-
     nav: [
       { text: '首页', link: '/' },
       { text: '华通云开发工具', link: '/wt-edge' },
@@ -68,6 +67,8 @@ export default defineConfig({
         items: [
           { text: '链接', link: '/link/' },
           { text: '资源', link: '/resource/' },
+          { text: '镜像 1', link: 'https://wt.jixiaokang.com/' },
+          { text: '镜像 2', link: 'https://wt-docs.edgeone.app/' },
         ]
       },
     ],
