@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ak as l}from"./chunks/framework.BfRaS3j9.js";const g=JSON.parse('{"title":"公司内网部署","description":"","frontmatter":{},"headers":[],"relativePath":"bale/index.md","filePath":"bale/index.md"}'),h={name:"bale/index.md"};function p(k,s,t,e,E,r){return n(),a("div",null,s[0]||(s[0]=[l("",41)]))}const y=i(h,[["render",p]]);export{g as __pageData,y as default};

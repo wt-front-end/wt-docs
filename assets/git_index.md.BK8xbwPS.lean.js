@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as t,ak as h}from"./chunks/framework.BfRaS3j9.js";const g=JSON.parse('{"title":"Git 提交规范","description":"","frontmatter":{},"headers":[],"relativePath":"git/index.md","filePath":"git/index.md"}'),n={name:"git/index.md"};function l(e,s,p,k,F,d){return t(),a("div",null,s[0]||(s[0]=[h("",35)]))}const o=i(n,[["render",l]]);export{g as __pageData,o as default};
