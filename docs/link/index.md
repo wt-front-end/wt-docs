@@ -1,21 +1,18 @@
 ---
-title: 前端链接
+layoutClass: m-nav-layout
+outline: [2, 3, 4]
 ---
-# 前端常用链接
 
-- [前端导航](https://fe-nav.netlify.app/nav/)
-- [开发武器库](https://devtool.tech/)
+ <script setup>
+import NavLinks from '../.vitepress/components/NavLinks.vue'
+import { NAV_DATA } from './data'
+</script>
+<style src="./index.scss"></style>
 
+# 前端导航
 
-## 文档地址
+> 汇聚前端常用导航、资源，帮助前端学习、提高效率。 
 
-- [阮一峰博客](http://www.ruanyifeng.com/blog/)
-- [潮流周刊](https://weekly.tw93.fun/)
-- [流程图](https://asciiflow.com/#/)
-- [快速ppt](https://cn.sli.dev/guide/)
-- [代码演示](https://codesandbox.io/)
-- [`Vue 3.0`  `Options API` 和 `Composition API`的异同](https://www.zhihu.com/question/429036806/answer/1564223482)
-- [`Css` `tailwindcss`](https://tailwindchina.com/resources/#tailwindcss-%E6%95%99%E7%A8%8B)
-- [`svelte`官网](https://www.sveltejs.cn/)
-- [`Vite`中文 ](https://vite.xilinglaoshi.com/)
-- [vue3js](https://vue3js.cn/)
+<NavLinks :navData="NAV_DATA"/>
+
+<br /> 
