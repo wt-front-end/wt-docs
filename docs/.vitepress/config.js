@@ -44,6 +44,7 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/wt-front-end/wt-docs' }],
     nav: [
       { text: '首页', link: '/' },
+      { text: '华通云浙大先生SDK', link: '/wt-sdk' },
       { text: '华通云开发工具', link: '/wt-edge' },
       { text: 'WATONE 命令行', link: '/wt-cli' },
       {
