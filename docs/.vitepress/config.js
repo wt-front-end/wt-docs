@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 // .vitepress/config.mts
 import taskLists from 'markdown-it-task-checkbox'
-import { VitePluginRadar } from 'vite-plugin-radar'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 export default defineConfig({
@@ -11,17 +10,17 @@ export default defineConfig({
   sitemap: {
     hostname: 'http://wt.jixiaokang.com/'
   },
-  vite: {
-    plugins: [VitePluginRadar({
-      analytics: {
-        id: 'G-73ZHQ52XPJ',
-      },
-      microsoftClarity: {
-        id: 'qjqirq4yq4'
-      },
-    })]
-  },
   head: [
+    ['script', {}, `
+      (function(c,l,a,r,i,t,y){
+      c[a] = c[a] || function() { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "qjqirq4yq4");
+      `],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'baidu-site-verification', content: 'codeva-nIAubvqIiJ' }],
     ['meta', { name: 'google-site-verification', content: 'WxwZ9S-HTh3jLY420sVeLk9QF_JEWA-obw_zufcjEhc' }],
