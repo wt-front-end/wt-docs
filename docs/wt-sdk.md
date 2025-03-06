@@ -4,6 +4,15 @@ title: 华通云浙大先生 SDK
 
 # Watone AI SDK
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/watone-ai-sdk">
+    <img src="https://img.shields.io/npm/v/watone-ai-sdk?color=orange&label=" alt="版本" />
+  </a>
+  
+  <a href="https://github.com/qmhc/watone-ai-sdk/blob/main/LICENSE">
+    <img src="https://img.shields.io/npm/l/watone-ai-sdk" alt="许可证" />
+  </a>
+</p>
 
 一个用于iframe通信的轻量级SDK，支持子页面与父页面之间的安全通信。
 
@@ -48,6 +57,13 @@ try {
 } catch (error) {
   console.error('获取登录信息失败:', error);
 }
+// 退出登录
+try {
+  await sdk.logout();
+  console.log('退出登录成功');
+} catch (error) {
+  console.error('退出登录失败:', error);
+}
 
 // 页面导航
 sdk.navigate('/dashboard', { id: 123 });
@@ -90,6 +106,23 @@ listener.on('GET_LOGIN_INFO', (data, source) => {
     type: 'LOGIN_INFO_RESPONSE',
     data: loginInfo
   }, '*');
+});
+
+// 处理退出登录请求
+listener.on('LOGOUT', (data, source) => {
+  try {
+    // 在这里实现退出登录的逻辑
+    // 例如：清除token、重置状态等
+    source?.postMessage({
+      type: 'LOGOUT_RESPONSE',
+      data: { success: true }
+    }, '*');
+  } catch (error) {
+    source?.postMessage({
+      type: 'LOGOUT_RESPONSE',
+      data: { success: false, error: error.message }
+    }, '*');
+  }
 });
 
 // 处理导航请求
