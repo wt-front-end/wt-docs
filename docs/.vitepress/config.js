@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 // .vitepress/config.mts
 import taskLists from 'markdown-it-task-checkbox'
-
+import { VitePluginRadar } from 'vite-plugin-radar'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 export default defineConfig({
@@ -10,6 +10,16 @@ export default defineConfig({
   description: '前端基础指南',
   sitemap: {
     hostname: 'http://wt.jixiaokang.com/'
+  },
+  vite: {
+    plugins: [VitePluginRadar({
+      analytics: {
+        id: 'G-73ZHQ52XPJ',
+      },
+      microsoftClarity: {
+        id: 'qjqirq4yq4'
+      },
+    })]
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
